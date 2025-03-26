@@ -125,9 +125,9 @@ COUCHBASE_URL=your_couchbase_connection_string_url
 COUCHBASE_BUCKET=your_couchbase_bucket
 ```
 
-You can obtain those credentials by first creating an account on Couchbase Capella at [https://cloud.couchbase.com/](https://cloud.couchbase.com/) and then creating a database called `RealWorldRails`. Inside the database, create a bucket. The name of the bucket is what you should use for the `COUCHBASE_BUCKET` environment variable.
+You can obtain those credentials by first creating an account on Couchbase Capella at [https://cloud.couchbase.com/](https://cloud.couchbase.com/) and then creating a database called `RealWorldRails`. Inside the database, create a bucket called `RealWorldRailsBucket`. The name of the bucket is what you should use for the `COUCHBASE_BUCKET` environment variable.
 
-Once you have done so, you can navigate to the `Connect` tab in the database and copy the connection string URL. This is what you should use for the `COUCHBASE_URL` environment variable. You will also need to create a user with the appropriate permissions and use the username and password for the `COUCHBASE_USERNAME` and `COUCHBASE_PASSWORD` environment variables.
+Once you have done so, you can navigate to the `Connect` tab in the database and copy the connection string URL. This is what you should use for the `COUCHBASE_URL` environment variable. You will also need to create a user with the appropriate permissions and use the username and password for the `COUCHBASE_USERNAME` and `COUCHBASE_PASSWORD` environment variables. It's also recommended to add the IP address of the server to the Capella whitelist.
 
 **Running the Test Suite**
 
